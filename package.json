@@ -1,0 +1,28 @@
+{
+  "name": "hmbridge-mqtt",
+  "version": "0.0.0",
+  "description": "MQTT plugin for homematic-bridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Raff (https://github.com/hobbyquaker)",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^1.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hobbyquaker/homematic-bridge-mqtt"
+  },
+  "keywords": [
+    "homematic",
+    "bridge",
+    "plugin",
+    "mqtt"
+  ],
+  "bugs": {
+    "url": "https://github.com/hobbyquaker/homematic-bridge-mqtt/issues"
+  },
+  "homepage": "https://github.com/hobbyquaker/homematic-bridge-mqtt"
+}
