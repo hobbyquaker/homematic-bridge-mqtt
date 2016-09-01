@@ -2,6 +2,8 @@ var mqtt = require('mqtt');
 
 function HmbridgeMqtt(hmbridge) {
 
+    this.title = 'MQTT';
+
     hmbridge.log.info('plugin mqtt started');
 
     var client  = mqtt.connect('mqtt://172.16.23.100');
@@ -23,7 +25,7 @@ function HmbridgeMqtt(hmbridge) {
             meta: meta
         });
         client.publish(topic, payload, {retain: true});
-        hmbridge.log.info('mqtt >', topic, payload);
+        hmbridge.log.debug('mqtt >', topic, payload);
     });
 
     client.on('message', function (topic, message) {
@@ -58,6 +60,7 @@ function HmbridgeMqtt(hmbridge) {
 
     }
 
+    return this;
 }
 
 module.exports = HmbridgeMqtt;

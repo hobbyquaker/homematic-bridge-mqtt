@@ -1,0 +1,23 @@
+<dom-module id="hmbridge-mqtt">
+    <template>
+        <style>
+            paper-card {
+                width: 100%;
+                display: block;
+                margin-bottom: 6px;
+            }
+        </style>
+        <paper-card heading="MQTT Broker">
+            <div class="card-content">
+                <paper-input label="MQTT URL" value="{{config.mqtt.url}}"></paper-input>
+            </div>
+        </paper-card>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'hmbridge-mqtt'
+        });
+    </script>
+</dom-module>
